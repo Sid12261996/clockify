@@ -1,0 +1,9 @@
+<div class="navbar-wrapper">
+  <div class="group" *ngFor="let key of navBarKeys">
+    <h5>{{key|uppercase}}</h5>
+    <div class="items" *ngFor="let item of navBar[key]" [routerLinkActive]="''" (click)="onRedirect(item.redirectTo)">
+      <h6>{{item.icon}}</h6>
+      <h6>{{item.name|uppercase}}</h6>
+    </div>
+  </div>
+</div>

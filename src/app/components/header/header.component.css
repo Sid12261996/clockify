@@ -1,0 +1,26 @@
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*hamburger*/
+.header-wrapper > p:nth-child(1) {
+  flex: 1;
+  cursor: pointer;
+}
+
+.header-wrapper > h5 {
+  flex: 6;
+}
+
+.header-wrapper > p:nth-child(2) {
+  flex: 1;
+}
+
+.panel-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2;
+}
